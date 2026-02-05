@@ -17,9 +17,9 @@ A secure WebSocket-to-PTY bridge for [WCode](https://github.com/KkSss999/wcode).
 This proxy acts as a bridge between the WCode frontend (running in a browser) and the host operating system's shell.
 
 ```mermaid
-graph LR
-    A[WCode Frontend] <-->|Secure WebSocket (AES-256)| B[Terminal Proxy]
-    B <-->|PTY| C[System Shell (bash/zsh/powershell)]
+flowchart LR
+    A["WCode Frontend"] <--> |"Secure WebSocket (AES-256)"| B["Terminal Proxy"]
+    B <--> |"PTY"| C["System Shell (bash/zsh/powershell)"]
 ```
 
 ## Getting Started
