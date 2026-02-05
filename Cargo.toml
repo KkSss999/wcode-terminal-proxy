@@ -1,0 +1,38 @@
+# WCode Terminal Proxy - A secure WebSocket-to-PTY bridge
+# Provides encrypted terminal access with security filtering and session management
+[package]
+name = "wcode-terminal-proxy"
+version = "0.9.2"
+authors = ["NomoAIT (Guangzhou Maoyi Technology Co., Ltd)"]
+license = "Apache-2.0"
+edition = "2024"
+
+[dependencies]
+# Web framework with WebSocket support
+axum = { version = "0.7", features = ["ws"] }
+# Async runtime
+tokio = { version = "1.36", features = ["full"] }
+# Cross-platform PTY (pseudo-terminal) support
+portable-pty = "0.8"
+# Serialization framework
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Async utilities
+futures = "0.3"
+# Logging and tracing
+tracing = "0.1"
+tracing-subscriber = "0.3"
+# HTTP middleware (CORS support)
+tower-http = { version = "0.5", features = ["cors"] }
+# AES-256-GCM encryption for E2EE
+aes-gcm = "0.10"
+# Cryptographically secure random number generation
+rand = "0.8"
+# Base64 encoding/decoding
+base64 = "0.21"
+# Date and time utilities
+chrono = "0.4"
+# Hex encoding/decoding
+hex = "0.4"
+# SHA-256 hashing for key derivation
+sha2 = "0.10"

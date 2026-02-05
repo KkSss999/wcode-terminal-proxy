@@ -1,0 +1,12 @@
+# IDE
+.trae/
+
+# test
+.claude/
+
+# Rust
+target/
+Cargo.lock
+
+# docs
+docs/
